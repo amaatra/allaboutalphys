@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>All about Alphys</title>
+    <meta name="description"
+        content="TODO Description. This profile-page is a homage to the earliest web designers who were working without CSS & JS which were only invented in 1994/5." />
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="ninety-five_files/favicon.ico" type="image/x-icon">
+    <base target="_blank">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="flexbox">
+            <li><a href="index.html"><img id="homeicon" src="media/icons8-home.svg" alt="Home"></a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="undernet.html">UnderNet <img src="media/undernet.png" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+    <header class="header">
+        <h1>My Projects</h1>
+        <p>Here's a short of the projects I've worked on before and during my time as the Royal Scientist. Click on each
+            picture for a description!</p>
+    </header>
+
+
+    <ul>
+        <section class="center projects">
+            <li>
+                <span>Created Mettaton (original rectangular body as well as EX and NEO forms).</span>
+                <div>
+                    <div class="flexbox metta">
+                        <figure onclick="mtt()">
+                            <img src="media/MTT.png" alt="Mettaton's box-shaped body" height="250">
+                        </figure>
+                        <figure onclick="ex()">
+                            <img src="media/EX.png" alt="Mettaton EX" height="250">
+                        </figure>
+                        <figure onclick="neo()">
+                            <img src="media/NEO.png" alt="Mettaton NEO" height="250">
+                        </figure>
+                    </div>
+                    <p id="mettadesc"></p>
+                </div>
+            </li>
+        </section>
+        <section class="center projects">
+            <li>
+                <span>Created the coloured tiles puzzle</span>
+                <figure onclick="tiles()">
+                    <img src="media/Coloured Tiles Puzzle.png" alt="An image of the coloured tiles puzzle in Snowdin"
+                        height="250">
+                </figure>
+                <p id="tilesdesc"></p>
+            </li>
+        </section>
+        <section class="center projects">
+            <li>
+                <span>Connected the blue and orange lasers across Hotland and the CORE to a central system</span>
+                <figure onclick="lasers()">
+                    <img src="media/lasers.png" alt="An image of the laser puzzle" height="250">
+                </figure>
+                <p id="laserdesc"></p>
+            </li>
+        </section>
+    </ul>
+
+
+    <footer class="flexbox footer">
+        <address>
+            <p>
+                <i>Dr. Alphys
+                    Laboratory Near L1 lift, Hotland</i>
+            </p>
+        </address>
+
+        <br>
+        <div>
+            <p>
+                All image assets (except the garbage photo), the "social media posts," and the name of the anime "Mew
+                Mew Kissy
+                Cutie" were taken from Undertale. <a target="_blank"
+                    href="https://icons8.com/icon/RYh4BCDIOen9/home">The home</a> icon was made by <a target="_blank"
+                    href="https://icons8.com">Icons8</a>
+            </p>
+        </div>
+        <div>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"> <a property="dct:title"
+                    rel="cc:attributionURL" href="/">this website</a> © 2024 is based on
+                w4rner's <a href="http://w4.rner.me/ninety-five.html">
+                    'Ninety Five' template</a> after <a href="http://www.geom.uiuc.edu/~munzner/">Tamara
+                    Munzner's</a>
+                and
+                therefore is licensed under
+
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"
+                    rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    // Mettaton
+
+    var mettadesc = document.getElementById("mettadesc");
+    var tilesdesc = document.getElementById("tilesdesc");
+    var laserdesc = document.getElementById("laserdesc");
+
+    function mtt() {
+        if (mettadesc.innerHTML == "") {
+            mettadesc.innerHTML =
+                "This is Mettaton's box form. He's practically invulnerable! His high defense ensures he never gets hit - and his attacks <em>never</em> miss";
+        } else {
+            mettadesc.innerHTML = "";
+        }
+    }
+
+    function ex() {
+        if (mettadesc.innerHTML == "") {
+            mettadesc.innerHTML =
+                "Ah, the EX robot was whacked to death by a kid with a frying pan... However, the legs remained intact!";
+        } else {
+            mettadesc.innerHTML = "";
+        }
+    }
+
+    function neo() {
+        if (mettadesc.innerHTML == "") {
+            mettadesc.innerHTML =
+                "Mettaton never got to use the NEO robot. That's a shame... I was really proud of the arm lasers!";
+        } else {
+            mettadesc.innerHTML = "";
+        }
+    }
+
+    //Tiles
+
+    function tiles() {
+        if (tilesdesc.innerHTML == "") {
+            tilesdesc.innerHTML =
+                "The coloured tiles puzzle is my proudest invention! <em>Red lights are impassable, you cannot walk on them...</em>";
+        } else {
+            tilesdesc.innerHTML = "";
+        }
+    }
+
+    //Lasers
+    function lasers() {
+        if (laserdesc.innerHTML == "") {
+            laserdesc.innerHTML =
+                "<figcaption>I set up a system that allows me to control all the lasers from my lab! It's much more efficient than manually turning them on and off";
+        } else {
+            laserdesc.innerHTML = "";
+        }
+    }
+</script>

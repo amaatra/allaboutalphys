@@ -10,55 +10,65 @@
     <link rel="icon" href="ninety-five_files/favicon.ico" type="image/x-icon">
     <base target="_blank">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Alphys</h1>
-        <h2>Part-time scientist, part-time engineer, full-time anime nerd</h2>
+    <nav>
+        <ul class="flexbox">
+            <li><a href="index.html"><img id="homeicon" src="media/icons8-home.svg" alt="Home"></a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="undernet.html">UnderNet <img src="media/undernet.png" alt=""></a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+    <header class="header">
+        <h1>Get in touch!</h1>
     </header>
 
-    <hr>
-
     <section>
-        <h2>Get in touch!</h2>
-        <form action="submit.html">
-            <label for="contact">What would you like to say?</label>
-            <input type="text" id="contact" name="contact"><br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+        <form action="submit.html" method="GET" class="flexbox formcontent">
+            <div class="inputs">
+                <label for="contact">What would you like to say?</label>
+                <input class="formbtn" type="submit" value="Submit">
+                <input class="formbtn" type="reset" value="Reset">
+            </div>
+            <div>
+                <input class="textinpt" type="text" id="contact" name="contact">
+            </div>
         </form>
+        <div class="mail">
+            <img src="media/Mailbox.png" alt="An empty mailbox">
+        </div>
     </section>
 
-    <footer>
-        <hr>
+    <footer class="flexbox footer">
         <address>
-            <h2>
-                Address
-            </h2>
-            <pre>
-            <i>Dr. Alphys
-            Laboratory, South of L1 Elevator, Hotland</i>
-            <img src="media/lab.jpg" alt="The outside of Alphys's lab" height="150">
-            
-        </pre>
+            <p>
+                <i>Dr. Alphys
+                    Laboratory Near L1 lift, Hotland</i>
+            </p>
         </address>
 
-        <a href="contact.html"><img src="media/Mailbox.png" height="50" alt="Mailbox"></a>
-        <a rev="Subdocument" href="undernet.html"><img src="media/undernet.png" height="50" alt="UnderNet"></a>
-        <a href="truelab.html"><img src="media/endogeny.png" alt="A strange... dog?" height="50"><small>(Don't click this link unless you're prepared for a bit of a scare)</small></a>
-
-        <hr>
         <br>
-
-        <small>
-            Last modified: Tue Jul 24
-            <!-- TODO update -->
+        <div>
+            <p>
+                All image assets (except the garbage photo), the "social media posts," and the name of the anime "Mew
+                Mew Kissy
+                Cutie" were taken from Undertale. <a target="_blank"
+                    href="https://icons8.com/icon/RYh4BCDIOen9/home">The home</a> icon was made by <a target="_blank"
+                    href="https://icons8.com">Icons8</a>
+            </p>
+        </div>
+        <div>
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"> <a property="dct:title"
-                    rel="cc:attributionURL" href="/">this website</a> © 2023 is based on w4rner's <a
-                    href="http://w4.rner.me/ninety-five.html">
-                    'Ninety Five' template</a> after <a href="http://www.geom.uiuc.edu/~munzner/">Tamara Munzner's</a>
+                    rel="cc:attributionURL" href="/">this website</a> © 2024 is based on
+                w4rner's <a href="http://w4.rner.me/ninety-five.html">
+                    'Ninety Five' template</a> after <a href="http://www.geom.uiuc.edu/~munzner/">Tamara
+                    Munzner's</a>
                 and
                 therefore is licensed under
 
@@ -72,6 +82,6 @@
                         src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
                 </a>
             </p>
-        </small>
-    </footer> <p></p>
+        </div>
+    </footer>
 </body>

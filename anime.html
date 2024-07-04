@@ -10,83 +10,90 @@
     <link rel="icon" href="ninety-five_files/favicon.ico" type="image/x-icon">
     <base target="_blank">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Alphys</h1>
-        <h2>Part-time scientist, part-time engineer, full-time anime nerd</h2>
-    </header>
+    <nav>
+        <ul class="flexbox">
+            <li><a href="index.html"><img id="homeicon" src="media/icons8-home.svg" alt="Home"></a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="undernet.html">UnderNet <img src="media/undernet.png" alt=""></a></li>
+        </ul>
+    </nav>
+    <main>
+        <br><br><br>
+        <header class="header">
+            <h1>Anime!</h1>
+        </header>
 
-    <hr>
+        <div class="flexbox animeflex">
+            <section class="halfwidthspecial">
+                <div>
+                    <h2>My favourite animes</h2>
+                    <p><em><b>Mew Mew Kissy Cutie!!!</b></em></p>
+                    <p>Dust Note</p>
+                    <p>Attack On Underground</p>
+                    <p>My Monster Academia</p>
+                    <p>Glyde Ball Z</p>
+                </div>
+            </section>
 
-    <h2>My manga collection!!!!!</h2>
-    <img src="media/anime collection.jpg" alt="Five bookshelves in a row">
-    <p>These bookshelves are filled with all the manga I've collected over the years! The garbage dump is basically the
-        only connection
-        between the surface (where the humans live) and the Underground (where the monsters live). All the stuff that
-        humans throw away, they find their way to the garbage dump, and I go every now and then to see if there's
-        anything I like!</p>
-    <hr>
+            <section class="halfwidthspecial">
+                <div>
+                    <h2>My manga collection!!!!!</h2>
+                    <img src="media/anime collection.jpg" alt="Five bookshelves in a row">
+                    <p>I've been collecting these since I was in college! I... I just graduated.</p>
+                </div>
+            </section>
+        </div>
 
-    <h2>Mew Mew Kissy Cutie memorabilia</h2>
-    <ul>
-        <li>
-            <figure>
-                <figcaption>These are my Mew Mew posters!! They're my most prized possessions. I framed them to protect
-                    them from the wacky chemicals wafting around in my lab.</figcaption>
-                <img src="media/poster.png" alt="A poster of a pink catgirl" height="150">
-                <img src="media/poster 2.png" alt="A poster with a pink heart and some gibberish text" height="150">
+        <h1>Mew Mew Kissy Cutie memorabilia</h1>
+        <p class="center">Click on each item for a little description!</p>
+        <section>
+            <div class="flexbox">
+                <figure id="posters" class="flexbox mewmewflex memorabilia thirdwidth" onclick="posters()">
+                    <img src="media/poster.png" alt="A poster of a pink catgirl">
+                </figure>
+                <figure id="toys" class="flexbox mewmewflex memorabilia thirdwidth" onclick="toys()">
+                    <img src="media/doll.png" alt="A cat doll">
+                    <img src="media/doll 2.png" alt="An anthropomorphic animal doll">
+                </figure>
+                <figure id="doll" class="flexbox mewmewflex memorabilia thirdwidth" onclick="doll()">
+                    <img src="media/mew mew doll.png" alt="A large pink catgirl doll">
+                </figure>
+            </div>
+            <p id="memorabiliadesc"></p>
+        </section>
 
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <figcaption>My figurines! They're my second- and third-favourite characters. They're quite old and
-                    small, but I still love them!</figcaption>
-                <img src="media/doll.png" alt="A cat doll" height="100">
-                <img src="media/doll 2.png" alt="An anthropomorphic animal doll" height="100">
+    </main>
 
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <figcaption><b><em>AHHHHH MY MEW MEW DOLL!!!!!!</em></b> Forget what I said about the posters. THIS is
-                    my most valuable possession. I'd protect her with my <em>LIFE!!!</em></figcaption>
-                <img src="media/mew mew doll.png" alt="A large pink catgirl doll" height="150">
-<p></p>
-            </figure>
-        </li>
-    </ul>
-
-    <footer>
-        <hr>
+    <footer class="flexbox footer">
         <address>
-            <h2>
-                Address
-            </h2>
-            <pre>
-            <i>Dr. Alphys
-            Laboratory, South of L1 Elevator, Hotland</i>
-            <img src="media/lab.jpg" alt="The outside of Alphys's lab" height="150">
-            
-        </pre>
+            <p>
+                <i>Dr. Alphys
+                    Laboratory Near L1 lift, Hotland</i>
+            </p>
         </address>
 
-        <a href="contact.html"><img src="media/Mailbox.png" height="50" alt="Mailbox"></a>
-        <a rev="Subdocument" href="undernet.html"><img src="media/undernet.png" height="50" alt="UnderNet"></a>
-        <a href="truelab.html"><img src="media/endogeny.png" alt="A strange... dog?" height="50"><small>(Don't click this link unless you're prepared for a bit of a scare)</small></a>
-
-        <hr>
         <br>
-
-        <small>
-            Last modified: Tue Jul 24
-            <!-- TODO update -->
+        <div>
+            <p>
+                All image assets (except the garbage photo), the "social media posts," and the name of the anime "Mew
+                Mew Kissy
+                Cutie" were taken from Undertale. <a target="_blank"
+                    href="https://icons8.com/icon/RYh4BCDIOen9/home">The home</a> icon was made by <a target="_blank"
+                    href="https://icons8.com">Icons8</a>
+            </p>
+        </div>
+        <div>
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"> <a property="dct:title"
-                    rel="cc:attributionURL" href="/">this website</a> © 2023 is based on w4rner's <a
-                    href="http://w4.rner.me/ninety-five.html">
-                    'Ninety Five' template</a> after <a href="http://www.geom.uiuc.edu/~munzner/">Tamara Munzner's</a>
+                    rel="cc:attributionURL" href="/">this website</a> © 2024 is based on
+                w4rner's <a href="http://w4.rner.me/ninety-five.html">
+                    'Ninety Five' template</a> after <a href="http://www.geom.uiuc.edu/~munzner/">Tamara
+                    Munzner's</a>
                 and
                 therefore is licensed under
 
@@ -100,7 +107,38 @@
                         src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
                 </a>
             </p>
-        </small>
+        </div>
     </footer>
+
+    <script>
+        var desc = document.getElementById("memorabiliadesc");
+
+        function posters() {
+            if (desc.innerHTML == "") {
+                desc.innerHTML =
+                    "These are my Mew Mew posters!! They're my most prized possessions. I framed them to protect them from the strange chemicals wafting around in my lab.";
+            } else {
+                desc.innerHTML = "";
+            }
+        }
+
+        function toys() {
+            if (desc.innerHTML == "") {
+                desc.innerHTML =
+                    "My figurines! They're my second- and third-favourite characters. They're quite old and small, but I still love them!.";
+            } else {
+                desc.innerHTML = "";
+            }
+        }
+
+        function doll() {
+            if (desc.innerHTML == "") {
+                desc.innerHTML =
+                    "<em><b>AHHHHH MY MEW MEW DOLL!!!!!!</em></b> Forget what I said about the posters. THIS is my most valuable possession. I'd protect her with my <em>LIFE!!!</em>";
+            } else {
+                desc.innerHTML = "";
+            }
+        }
+    </script>
 
 </body>
