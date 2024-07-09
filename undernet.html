@@ -11,20 +11,36 @@
     <base target="_blank">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66bd33c671.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
         <ul class="flexbox">
-            <li><a href="index.html"><img id="homeicon" src="media/icons8-home.svg" alt="Home"></a></li>
-            <li><a href="anime.html">Anime</a></li>
-            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="index.html"><img class="svgicon" src="media/icons8-home.svg" alt="Home"></a></li>
+            <li>
+                <!-- <img src="media/empty.png" alt="" id="heartimg" class="heartimg"> -->
+                <a href="anime.html" onmouseenter="highlight(heartimg)" onmouseleave="unhighlight(heartimg)">Anime</a>
+            </li>
+            <li>
+                <a href="projects.html">My Projects</a>
+            </li>
             <li><a href="contact.html">Contact me</a></li>
             <li><a href="#">UnderNet <img src="media/undernet.png" alt=""></a></li>
         </ul>
     </nav>
 
-    <br><br><br><br>
+    <!-- <script>
+        var image = document.getElementsByClassName("heartimg");
+
+        function highlight(heartimg) {
+            image.src = "media/heart.png";
+        }
+
+        function unhighlight(image) {
+            image.src = "media/empty.png";
+        }
+    </script> -->
     <header class="header">
         <h1>UnderNet</h1>
         <p>Connecting the underground, one post at a time</p>
@@ -32,15 +48,16 @@
 
     <section class="flexbox posts">
         <div class="pfp">
-            <img src="media/Mew mew pfp.png" alt="A catgirl with a deeply confused expression">
+            <img src="media/Mew mew pfp.png" alt="A catgirl with a confused and surprised expression">
         </div>
         <div>
             <h2>Dr. Alphys, PhD</h2>
-        <p>@ALPHYS</p>
-        <p id="followcount">952 followers | 845 following</p>
-        <input id="follow" type="button" value="Follow" onclick="changeText()">
+            <p>@ALPHYS</p>
+            <p id="followcount">952 followers | 845 following</p>
+            <input id="follow" type="button" value="Follow" onclick="changeText()">
 
-        <p>Bio: Hi, I'm Alphys! I like Mew Mew, instant noodles, staying indoors, building robots and writing essays about my favourite characters. I'm also the royal scientist - but an anime nerd first and</p>
+            <p>Bio: Hi, I'm Alphys! I like Mew Mew, instant noodles, staying indoors, building robots and writing essays
+                about my favourite characters. </p>
         </div>
     </section>
 
@@ -50,35 +67,59 @@
         <section>
             <p>
                 dinner with the girlfriend ;)
-                <br>
-                <img src="media/garbage.JPEG" alt="An image of a garbage can with sparkly filters over it" height="200">
-                <br><br>
-                <em>Posted yesterday at 11:42pm | 240 likes | 52 reposts | 14 comments</em>
             </p>
+            <img src="media/garbage.JPEG" alt="An image of a garbage can with sparkly filters over it" height="200">
+
+            <span class="shareinfo flexbox">
+                <p>Posted yesterday at 11:42pm</p>
+                <span class="shares">
+                    <span><img class="svgicon" src="media/heart-solid.svg" alt="Likes">240</span>
+                    <span class="shares"><img class="svgicon" src="media/share-nodes-solid.svg" alt="Shares">52</span>
+                    <span class="shares"><img class="svgicon" src="media/comment-solid.svg" alt="">14</span>
+                </span>
+            </span>
         </section>
-        
+
         <section>
             <p>
                 OMG? ppl think Mew Mew 2 is better than Mew Mew 1? LOLLLLL that's a joke right...
-                <br><br>
-                <em>Posted today at 3:26pm | 15 likes | 6 reposts | 67 comments</em>
             </p>
+            <span class="shareinfo flexbox">
+                <p>Posted today at 3:26pm</p>
+                <span class="shares">
+                    <span><img class="svgicon" src="media/heart-solid.svg" alt="Likes">15</span>
+                    <span class="shares"><img class="svgicon" src="media/share-nodes-solid.svg" alt="Shares">6</span>
+                    <span class="shares"><img class="svgicon" src="media/comment-solid.svg" alt="">67</span>
+                </span>
+            </span>
         </section>
-        
+
         <section>
             <p>
                 omg... DONT THEY GET IT RUINS Mew Mew's ENTIRE CHARACTER ARC
-                <br><br>
-                <em>Posted today at 3:27pm | 13 likes | 2 reposts | 18 comments</em>
             </p>
+            <span class="shareinfo flexbox">
+                <p>Posted today at 3:27pm</p>
+                <span class="shares">
+                    <span><img class="svgicon" src="media/heart-solid.svg" alt="Likes">13</span>
+                    <span class="shares"><img class="svgicon" src="media/share-nodes-solid.svg" alt="Shares">2</span>
+                    <span class="shares"><img class="svgicon" src="media/comment-solid.svg" alt="">18</span>
+                </span>
+            </span>
         </section>
-        
+
         <section>
             <p>
                 My Mew Mew 2 Review: Mew Mew Kissy Cutie 2 Is Neither Kissy Nor Cutie. Its Trash. 0 stars
-                <br><br>
-                <em>Posted today at 3:29pm | 153 likes | 10 reposts | 256 comments</em>
             </p>
+            <span class="shareinfo flexbox">
+                <p>Posted today at 3:29pm</p>
+                <span class="shares">
+                    <span><img class="svgicon" src="media/heart-solid.svg" alt="Likes">153</span>
+                    <span class="shares"><img class="svgicon" src="media/share-nodes-solid.svg" alt="Shares">10</span>
+                    <span class="shares"><img class="svgicon" src="media/comment-solid.svg" alt="">255</span>
+                </span>
+            </span>
         </section>
     </div>
 

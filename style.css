@@ -5,46 +5,63 @@
 }
   
 body {
-    font-family: DTMono;
+    font-family: DTMono, sans-serif;
     letter-spacing:1px;
+
+    background-color: black;
+    color: white;
 
     margin:0;
     padding:0;
-
-    background-color: #FFCAD4;
-    color: #100C0C;
 }
 
 p{
     font-size: 20px;
 }
 
-a{
-    color: #F4ACB7;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline dashed;
-}
-
 main{
     padding:20px;
 }
 
-/* nav */
-nav {
-    background-color: #9D8189;
-    position: fixed;
-    width: 100%;
+button, #follow{
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 0;
 }
 
-#homeicon {
-    filter: invert(100%) sepia(8%) saturate(6880%) hue-rotate(320deg) brightness(110%) contrast(115%);
+button:hover, #follow:hover{
+    font-weight: 900;
+    color: black;
+    background-color: white;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    background-color: black;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+nav .svgicon {
+    filter: invert(86%) sepia(98%) saturate(7497%) hue-rotate(357deg) brightness(103%) contrast(101%);
+}
+
+nav .svgicon:hover{
+    filter: invert(15%) sepia(52%) saturate(7437%) hue-rotate(356deg) brightness(103%) contrast(121%);
+}
+
+section .svgicon{
+    filter: invert(94%) sepia(16%) saturate(4373%) hue-rotate(2deg) brightness(116%) contrast(114%);
+    height: 20px;
+    margin: -4px 0;
+    padding-right: 5px;
 }
 
 ul {
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 ul li{
@@ -52,8 +69,15 @@ ul li{
     font-size: 30px;
 }
 
-nav a{
-    color: #FFE5D9;
+/* anchor */
+
+a{
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
 
 a img{
@@ -66,22 +90,15 @@ a img{
 h1{
     
     padding: 15px 30px;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 25px auto 0 auto;
 
     font-size: 40px;
-
-    background-color: #F4ACB7;
-    text-shadow: 3px 3px #FFCAD4;
-
-    border-radius: 10px;
 
     width:fit-content;
 }
 
 h2 {
     font-size: 30px;
-    text-shadow: #FFE5D9 2px 2px;
 }
 
 /* flexbox */
@@ -130,23 +147,19 @@ h2 {
 /* footer */
 
 .footer{
-    background-color: #9D8189;
     padding: 0 15px;
     text-align: center;
 }
 
 .footer p{
-    color: #FFE5D9;
-    border-right: 2px solid #FFE5D9;
     padding:10px;
 }
 
 /* bio */
 section{
-    background-color: #F4ACB7;
     padding: 20px;
     margin: 20px;
-    border-radius: 20px;
+    border: 5px solid white;
 }
 
 /* memorabilia */
@@ -167,14 +180,14 @@ section{
     justify-content: center;
 }
 
-.projects .metta{
+.metta{
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .projects span{
     font-size:30px;
-    text-shadow: 2px 2px #FFCAD4;
 }
 
 /* contact */
@@ -198,17 +211,12 @@ form{
 .formbtn{
     font-size: 30px;
     font-family: DTMono;
-    background-color: #FFE5D9;
-    border: 2px solid #9D8189;
     border-radius: 10px;
     margin: 20px;
     padding: 5px 15px;
 }
 
 .formbtn:hover{
-    color: #FFE5D9;
-    background-color: #9D8189;
-    border: 2px solid #FFE5D9;
     border-radius: 10px;
     padding: 5px 15px;
 }
@@ -231,35 +239,33 @@ form{
 .pfp img{
     height: 150px;
     margin: 20px;
-    border: 5px solid #9D8189;
-    border-radius: 100%;
 }
 
 #follow{
     font-size: 20px;
     font-family: DTMono;
-    background-color: #FFE5D9;
-    border: 2px solid #9D8189;
     border-radius: 10px;
     padding: 5px 15px;
-}
-
-#follow:hover{
-    color: #FFE5D9;
-    background-color: #9D8189;
-    border: 2px solid #FFE5D9;
-    border-radius: 10px;
 }
 
 .posts{
     margin: 20px 20%;
 }
 
-.posts em{
-    background-color: #9D8189;
-    display: block;
-    margin: 0 -20px -50px -20px;
+.shareinfo{
+    margin: 0 -20px -20px -20px;
+    color: yellow;
     padding:20px;
-    border-radius:0 0 20px 20px;
-    color: #FFE5D9;
+}
+
+.shares{
+    margin-top:22.5px;
+    margin-bottom: -21px;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+#heartimg{
+    height: 50px;
+    margin: -20px ;
 }
