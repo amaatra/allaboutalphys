@@ -23,14 +23,19 @@ main{
     padding:20px;
 }
 
-button, #follow{
+.button{
     color: white;
     background-color: black;
     border: 3px solid white;
     border-radius: 0;
+
+    font-size: 20px;
+    font-family: DTMono;
+    border-radius: 10px;
+    padding: 5px 15px;
 }
 
-button:hover, #follow:hover{
+.button:hover{
     font-weight: 900;
     color: black;
     background-color: white;
@@ -214,16 +219,30 @@ form{
     border-radius: 10px;
     margin: 20px;
     padding: 5px 15px;
+
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 .formbtn:hover{
-    border-radius: 10px;
+    color: black;
+    background-color: white;
     padding: 5px 15px;
 }
 
 .mail img{
     margin: -75px 0 20px 90%;
     height: 150px;
+}
+
+.submitform{
+    padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+    
 }
 
 .inputs label{

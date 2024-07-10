@@ -30,19 +30,20 @@
     </header>
 
     <section>
-        <div class="flexbox formcontent">
-            <div class="inputs">
+        <div class="flexbox submitform">
+            <div>
                 <img src="media/alphys happy.gif" alt="Alphys making a thumbs-up gesture" height="150">
             </div>
             <div class="thanks">
                 <h2>You said: <span id="yourmessage"></span></h2>
-                
-    <p>I'll get back to you soon! I'll also probably hang your mail on my wall out of excitement. You know, nobody
-                really sends me anything nice - so the few times someone does, I feel like I have to commemorate it
-                somehow.
-                Just to appreciate their effort of talking to someone as weird as me. Uh, was that too much? I'll- I'll
-                just
-                keep quiet now... Ehehe...</p>
+                <p>I'll get back to you soon! I'll also probably hang your mail on my wall out of excitement. You know,
+                    nobody
+                    really sends me anything nice - so the few times someone does, I feel like I have to commemorate it
+                    somehow.
+                    Just to appreciate their effort of talking to someone as weird as me. Uh, was that too much? I'll-
+                    I'll
+                    just
+                    keep quiet now... Ehehe...</p>
             </div>
         </div>
         <div class="mail">
@@ -95,5 +96,8 @@
 </body>
 
 <script>
-    document.getElementById("yourmessage").innerHTML = window.location.search;
+    initAns = window.location.search;
+    noPlusAns = initAns.split('+').join(' ')
+    displayAns = noPlusAns.split('?contact=').join('');
+    document.getElementById("yourmessage").innerHTML = decodeURIComponent('“' + displayAns + '”');
 </script>
