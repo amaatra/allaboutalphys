@@ -157,6 +157,7 @@ h2 {
     padding: 0 15px;
     text-align: center;
     color: gray;
+    gap: 20px;
 }
 
 .footer p{
@@ -320,6 +321,8 @@ form{
     margin: -20px ;
 }
 
+/* media queries */
+
 @media screen and (max-width: 700px) {
     body{
         padding: 20px;
@@ -374,5 +377,9 @@ form{
     }
     .shares{
         margin-bottom:0;
+    }
+
+    .footer{
+        gap: 0;
     }
 }
