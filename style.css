@@ -119,6 +119,8 @@ h2 {
 .animeflex{
     justify-content: center;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .mewmewflex{
@@ -154,17 +156,19 @@ h2 {
 .footer{
     padding: 0 15px;
     text-align: center;
+    color: gray;
 }
 
 .footer p{
-    padding:10px;
+    padding:0 10px -10px;
 }
 
 /* bio */
 section{
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto 20px;
     border: 5px solid white;
+    width: 80%;
 }
 
 /* memorabilia */
@@ -189,6 +193,23 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.metta img{
+    margin-bottom: -50px;
+}
+
+#posters{
+    width: 540px;
+    height: 192x;
+    margin-bottom: 0;
+}
+
+#toys{
+    flex-wrap: nowrap;
+    width: 220px;
+    height: 206px;
+    margin-bottom: 0;
 }
 
 .projects span{
@@ -233,16 +254,12 @@ form{
 }
 
 .mail img{
-    margin: -75px 0 20px 90%;
+    margin: 0 0 20px 90%;
     height: 150px;
 }
 
 .submitform{
     padding: 20px;
-}
-
-@media screen and (min-width: 480px) {
-    
 }
 
 .inputs label{
@@ -258,6 +275,7 @@ form{
 .pfp img{
     height: 150px;
     margin: 20px;
+    border-radius: 100%;
 }
 
 #follow{
@@ -267,8 +285,21 @@ form{
     padding: 5px 15px;
 }
 
-.posts{
-    margin: 20px 20%;
+.post{
+    width: 50%;
+}
+
+.post h3{
+    margin-top: 31px;
+    font-size: 25px;
+}
+
+.post em{
+    color: gray;
+}
+
+.bio{
+    object-fit:fill;
 }
 
 .shareinfo{
@@ -287,4 +318,61 @@ form{
 #heartimg{
     height: 50px;
     margin: -20px ;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    h1, h2, p{
+        width: 100%;
+    }
+    .flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section img{
+        width: 100%;
+        object-fit:contain;
+    }
+    .bio{
+        object-fit:contain;
+    }
+
+    .mail img{
+        margin: 0 0 50px 75%;
+        height: 150px;
+        width: auto;
+    }
+    .textinpt{
+        margin-left: 0;
+        width: 100%;
+    }
+    .svgicon{
+        width: 20px;
+    }
+    .shareinfo{
+        flex-wrap: wrap-reverse;
+    }
+    .post, .bio{
+        gap: 20px;
+        width: 80%;
+    }
+    .pfp {
+        width: 150px;
+        padding: 0;
+        margin-left: -150;
+    }
+    .animeflex{
+        justify-content: center;
+        text-align: center;
+        margin-left: -100px;
+        width: 150%;
+    }
+    .shares{
+        margin-bottom:0;
+    }
 }

@@ -42,7 +42,7 @@
 
             <section class="halfwidthspecial">
                 <div>
-                    <h2>My manga collection!!!!!</h2>
+                    <h2>My manga collection!</h2>
                     <img src="media/anime collection.jpg" alt="Five bookshelves in a row">
                     <p>I've been collecting these since I was in college! I... I just graduated.</p>
                 </div>
@@ -50,7 +50,10 @@
         </div>
 
         <h1>Mew Mew Kissy Cutie memorabilia</h1>
-        <p class="center">Click on each item for a little description!</p>
+        <p class="center">Click on each item for a little description! <br> 
+            <small>You may have to scroll down a bit to view the descriptions on mobile!</small>
+        </p>
+        
         <section>
             <div class="flexbox">
                 <figure id="posters" class="flexbox mewmewflex memorabilia thirdwidth" onclick="posters()">
@@ -113,7 +116,7 @@
         function posters() {
             if (desc.innerHTML == "") {
                 desc.innerHTML =
-                    "These are my Mew Mew posters!! They're my most prized possessions. I framed them to protect them from the strange chemicals wafting around in my lab.";
+                    "This is my Mew Mew poster!! She watches me while I work. I framed the poster to protect it from the strange chemicals wafting around my lab. ";
             } else {
                 desc.innerHTML = "";
             }
@@ -131,7 +134,7 @@
         function doll() {
             if (desc.innerHTML == "") {
                 desc.innerHTML =
-                    "<em><b>AHHHHH MY MEW MEW DOLL!!!!!!</em></b> Forget what I said about the posters. THIS is my most valuable possession. I'd protect her with my <em>LIFE!!!</em>";
+                    "<em><b>AHHHHH MY MEW MEW DOLL!!!!!!</em></b> This is my most valuable possession!!! I'd protect her with my <em>LIFE!!!</em> <br> <br> Wait, where did it go...?";
             } else {
                 desc.innerHTML = "";
             }
