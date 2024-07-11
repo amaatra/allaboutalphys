@@ -129,16 +129,8 @@ h2 {
 }
 
 /* general classes */
-.halfwidth{
-    width: 50%;
-}
-
 .halfwidthspecial{
     width: 45%;
-}
-
-.thirdwidth{
-    width:30%
 }
 
 .center{
@@ -158,10 +150,6 @@ h2 {
     text-align: center;
     color: gray;
     gap: 20px;
-}
-
-.footer p{
-    padding:0 10px -10px;
 }
 
 /* bio */
@@ -300,7 +288,7 @@ form{
 }
 
 .bio{
-    object-fit:fill;
+    object-fit:contain;
 }
 
 .shareinfo{
